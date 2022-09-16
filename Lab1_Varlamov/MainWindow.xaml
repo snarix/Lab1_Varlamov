@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <GroupBox>
+            <Grid>
 
+                <Menu Margin="0,0,0,413">
+                    <MenuItem>
+
+                    </MenuItem>
+                </Menu>
+                <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="428" Height="64"/>
+
+
+
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>
