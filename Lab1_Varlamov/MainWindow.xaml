@@ -16,9 +16,6 @@
                     </MenuItem>
                 </Menu>
                 <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="428" Height="64"/>
-                <Label>
-                    
-                </Label>
 
 
 
