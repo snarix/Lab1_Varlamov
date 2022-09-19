@@ -1,0 +1,43 @@
+﻿<Window x:Class="LabFirst_Varlamov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabFirst_Varlamov"
+        mc:Ignorable="d"
+        Title="Практическая работа №1" Height="450" Width="800" ResizeMode="CanMinimize" Icon="/gens.png">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.ColumnSpan="3"
+              VerticalAlignment="Top">
+            <MenuItem Header="О программе"
+                      Click="AboutProgram"/>
+            <MenuItem Header="Выход"
+                      Click="Exit"/>
+        </Menu>
+
+        <GroupBox Header="Ввод массива" 
+                  Grid.Row="0"
+                  Margin="0,18,0,0" >
+            <Grid>
+                <TextBox Margin="28,52,28,21" />
+                <Button Margin="28,10,28,63" 
+                        Content="Сгенерировать"
+                        Click="Generate"/>
+            </Grid>
+        </GroupBox>
+        
+    </Grid>
+</Window>
