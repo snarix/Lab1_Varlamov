@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Lib_3\Lib_3.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="gens.png" />
   </ItemGroup>
 
