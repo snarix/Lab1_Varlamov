@@ -32,10 +32,24 @@
                   Grid.Row="0"
                   Margin="0,18,0,0" >
             <Grid>
-                <TextBox Margin="28,52,28,21" />
+                <TextBox Margin="28,52,28,21"
+                         x:Name="mas"
+                         IsReadOnly="True"/>
                 <Button Margin="28,10,28,63" 
                         Content="Сгенерировать"
                         Click="Generate"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1"
+                  Header="Результат">
+            <Grid>
+                <Button Content="Результат"
+                        Click="Calculate" 
+                        Margin="28,10,28,81"/>
+                <TextBox Margin="28,52,28,38"
+                         x:Name="rez"
+                         IsReadOnly="True"/>
             </Grid>
         </GroupBox>
         

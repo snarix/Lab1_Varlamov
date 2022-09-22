@@ -2,9 +2,9 @@ using System;
 
 namespace Lib_3
 {
-    public static class MathString
+    public class MathString
     {
-        public static int ArrayCreate(int[] numbers)
+        public int ArrayCreate(int[] numbers)
         {
             Random rnd = new();
             for (int i = 0; i < numbers.Length; i++)
@@ -14,7 +14,7 @@ namespace Lib_3
             return numbers.Length;
         }
 
-        public static double SignSquare(int[] numbers)
+        public double SignSquare(int[] numbers)
         {
             for (int i = 0; i < numbers.Length; i++)
             {
