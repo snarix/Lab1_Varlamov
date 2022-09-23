@@ -44,14 +44,15 @@ namespace LabFirst_Varlamov
 
         private void Generate(object sender, RoutedEventArgs e)
         {
-            int[] array = new int[5];
-            int result = array.ArrayCreate();
-            mas.Text= result.ToString();
+            int[] array = MathString.ArrayCreate(5);
+            mas.Text = string.Join(" ", array);
         }
 
         private void Calculate(object sender, RoutedEventArgs e)
         {
-
+            int[] array = MathString.ArrayCreate(5);
+            int[] result = array.SignSquare();
+            rez.Text = string.Join(" ", result);
         }
     }
 }

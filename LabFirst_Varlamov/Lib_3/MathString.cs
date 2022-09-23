@@ -2,19 +2,20 @@ using System;
 
 namespace Lib_3
 {
-    public class MathString
+    public static class MathString
     {
-        public int ArrayCreate(int[] numbers)
+        public static int[] ArrayCreate(int count, int min = -4, int max = 7)
         {
+            int[] numbers = new int[count];
             Random rnd = new();
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rnd.Next(-4, 7);
+                numbers[i] = rnd.Next(min, max);
             }
-            return numbers.Length;
+            return numbers;
         }
 
-        public double SignSquare(int[] numbers)
+        public static int[] SignSquare(this int[] numbers)
         {
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -27,7 +28,7 @@ namespace Lib_3
                     Math.Pow(numbers[i], 2);
                 }
             }
-            return numbers.Length;
+            return numbers;
         }
 
 
