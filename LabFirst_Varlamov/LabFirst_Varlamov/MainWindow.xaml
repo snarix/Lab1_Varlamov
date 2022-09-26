@@ -7,15 +7,13 @@
         mc:Ignorable="d"
         Title="Практическая работа №1" Height="450" Width="800" ResizeMode="CanMinimize" Icon="/gens.png">
     <Grid>
-        
+
         <Grid.RowDefinitions>
-            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -32,12 +30,15 @@
                   Grid.Row="0"
                   Margin="0,18,0,0" >
             <Grid>
-                <TextBox Margin="28,52,28,21"
+                <Button Margin="28,43,28,105" 
+                        Content="Ввести длину массива"
+                        Click="MasLength"/>
+                <TextBox Margin="28,10,28,138"
+                         x:Name="lenght"/>
+                <Label Content="Массив от -4 до 7" Margin="120,105,120,47"/>
+                <TextBox Margin="28,134,28,14"
                          x:Name="mas"
                          IsReadOnly="True"/>
-                <Button Margin="28,10,28,63" 
-                        Content="Сгенерировать"
-                        Click="Generate"/>
             </Grid>
         </GroupBox>
 
@@ -46,12 +47,12 @@
             <Grid>
                 <Button Content="Результат"
                         Click="Calculate" 
-                        Margin="28,10,28,81"/>
-                <TextBox Margin="28,52,28,38"
+                        Margin="28,10,28,147"/>
+                <TextBox Margin="28,60,28,97"
                          x:Name="rez"
                          IsReadOnly="True"/>
             </Grid>
         </GroupBox>
-        
+
     </Grid>
 </Window>

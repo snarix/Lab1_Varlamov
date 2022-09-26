@@ -27,6 +27,8 @@ namespace LabFirst_Varlamov
             this.Height += 25;
         }
 
+        int[] array;
+
         private void AboutProgram(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Практическая работа №1.\r\n" +
@@ -42,17 +44,29 @@ namespace LabFirst_Varlamov
             this.Close();
         }
 
-        private void Generate(object sender, RoutedEventArgs e)
-        {
-            int[] array = MathString.ArrayCreate(5);
-            mas.Text = string.Join(" ", array);
-        }
-
         private void Calculate(object sender, RoutedEventArgs e)
         {
-            int[] array = MathString.ArrayCreate(5);
+            int x = Convert.ToInt32(lenght.Text);
+            array = MathString.ArrayCreate(x);
             int[] result = array.SignSquare();
             rez.Text = string.Join(" ", result);
+        }
+
+        private void MasLength(object sender, RoutedEventArgs e)
+        {
+            bool x = Int32.TryParse(lenght.Text, out int x1);
+            if(x)
+            {
+                if (x1 > 0)
+                {
+                    array = MathString.ArrayCreate(x1);
+                    mas.Text = string.Join(" ", array);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите правильные значения.");
+            }
         }
     }
 }
