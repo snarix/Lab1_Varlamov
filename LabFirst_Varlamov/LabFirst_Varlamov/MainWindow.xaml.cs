@@ -27,7 +27,7 @@ namespace LabFirst_Varlamov
             this.Height += 25;
         }
 
-        int[] array;
+        double[] array;
 
         private void AboutProgram(object sender, RoutedEventArgs e)
         {
@@ -46,20 +46,18 @@ namespace LabFirst_Varlamov
 
         private void Calculate(object sender, RoutedEventArgs e)
         {
-            int x = Convert.ToInt32(lenght.Text);
-            array = MathString.ArrayCreate(x);
-            int[] result = array.SignSquare();
+            double []result = array.SignSquare();
             rez.Text = string.Join(" ", result);
         }
 
         private void MasLength(object sender, RoutedEventArgs e)
         {
-            bool x = Int32.TryParse(lenght.Text, out int x1);
+            bool x = Double.TryParse(lenght.Text, out double x1);
             if(x)
             {
                 if (x1 > 0)
                 {
-                    array = MathString.ArrayCreate(x1);
+                    array = MathString.ArrayCreate((int)x1);
                     mas.Text = string.Join(" ", array);
                 }
             }

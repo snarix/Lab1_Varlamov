@@ -35,7 +35,8 @@
                         Click="MasLength"/>
                 <TextBox Margin="28,10,28,138"
                          x:Name="lenght"/>
-                <Label Content="Массив от -4 до 7" Margin="120,105,120,47"/>
+                <Label Content="Массив от -4 до 7"
+                       Margin="120,105,120,47"/>
                 <TextBox Margin="28,134,28,14"
                          x:Name="mas"
                          IsReadOnly="True"/>
@@ -51,6 +52,18 @@
                 <TextBox Margin="28,60,28,97"
                          x:Name="rez"
                          IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Grid.Column="1"
+                  Grid.Row="2">
+            <Grid>
+                <Button Margin="28,121,28,54"
+                        Content="О программе"
+                        Click="AboutProgram"/>
+                <Button Margin="28,165,28,10"
+                        Content="Выход"
+                        Click="Exit"/>
             </Grid>
         </GroupBox>
 
