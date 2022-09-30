@@ -50,7 +50,9 @@
             <Grid>
                 <Button Content="Результат"
                         Click="Calculate" 
-                        Margin="28,10,28,147"/>
+                        Margin="28,10,28,147"
+                        IsEnabled="False"
+                        x:Name="calc"/>
                 <TextBox Margin="28,60,28,97"
                          x:Name="rez"
                          IsReadOnly="True"/>

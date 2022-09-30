@@ -45,25 +45,30 @@ namespace LabFirst_Varlamov
         }
 
         private void Calculate(object sender, RoutedEventArgs e)
-        {
+        { 
             double []result = array.SignSquare();
             rez.Text = string.Join(" ", result);
+            
         }
 
         private void MasLength(object sender, RoutedEventArgs e)
         {
-            bool x = Double.TryParse(lenght.Text, out double x1);
-            if(x)
+            if (calc.IsEnabled == false)
             {
-                if (x1 > 0)
+                bool x = double.TryParse(lenght.Text, out double x1);
+                if(x)
                 {
+                    if (x1 > 0)
+                    {
                     array = MathString.ArrayCreate((int)x1);
                     mas.Text = string.Join(" ", array);
+                    }
                 }
-            }
-            else
-            {
+                else
+                {
                 MessageBox.Show("Введите правильные значения.");
+                }
+                calc.IsEnabled = true;
             }
         }
     }
