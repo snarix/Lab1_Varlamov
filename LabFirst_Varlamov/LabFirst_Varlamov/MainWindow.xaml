@@ -18,6 +18,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Image Source="/79596769.jpg" Margin="220,9,-180,160" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+
         <Menu Grid.ColumnSpan="3"
               VerticalAlignment="Top">
             <MenuItem Header="О программе"
